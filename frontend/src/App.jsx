@@ -4,7 +4,7 @@ function App() {
   const [answer, setAnswer] = useState('Loading...');
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/get-answer') // Change to deployed backend URL
+    fetch('http://51.21.199.221:3001/api/get-answer') 
       .then(res => res.json())
       .then(data => {
         setAnswer(data.data);
